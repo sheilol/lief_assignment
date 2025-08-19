@@ -10,8 +10,8 @@ export default async function Home() {
   return (
     <>
       <SignInButton />
-      <LinkButton label="Care Worker Dashboard" link="/caredash" align="left" />
-      <LinkButton label="Manager Dashboard" link="/managedash" align="right" />
+      <LinkButton label="Care Worker Dashboard" link="/caredash" align="start" />
+      <LinkButton label="Manager Dashboard" link="/managedash" align="start" />
     </>
   );
 }

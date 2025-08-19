@@ -9,7 +9,7 @@ const AppSidebar: React.FC = () => {
 
   const toggleSidebar = () => setCollapsed(!collapsed);
 
-  const NavItem: React.FC<{ href: string; icon: JSX.Element; label: string }> = ({ href, icon, label }) => (
+const NavItem: React.FC<{ href: string; icon: React.ReactNode; label: string }> = ({ href, icon, label }) => (
     <Link href={href}>
       <Tip content={collapsed ? label : undefined}>
         <Box direction="row" gap="small" align="center" pad="xsmall">
