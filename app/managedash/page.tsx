@@ -3,7 +3,12 @@
 import React, { useState } from "react";
 import { Grommet, Box, Button, Nav, Sidebar, Heading, Text } from "grommet";
 import { MapLocation, BarChart, Tasks } from "grommet-icons";
-import  SetLocationPerimeter  from "../components/SetLocationPerimeter";
+import dynamic from "next/dynamic";
+
+const SetLocationPerimeter = dynamic(
+  () => import("../components/SetLocationPerimeter"),
+  { ssr: false }
+);
 
 const theme = {
   global: {
